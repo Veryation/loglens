@@ -1,0 +1,46 @@
+name: Bug report
+description: Something in LogLens isn't working right.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for the report! Please remove any sensitive data (credentials, PII, private log contents) from anything you paste below.
+  - type: input
+    id: editor
+    attributes:
+      label: Editor & version
+      placeholder: e.g. IntelliJ IDEA 2025.2, or VS Code 1.129
+    validations:
+      required: true
+  - type: input
+    id: loglens-version
+    attributes:
+      label: LogLens version
+      placeholder: e.g. 0.1.0
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: e.g. Windows 11, macOS 14, Ubuntu 24.04
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you expect to happen, and what actually happened?
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open a .log file of ~X GB
+        2. ...
+        3. ...
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else?
+      description: Screenshots, approximate file size, or a small (redacted) sample of the log format help a lot.

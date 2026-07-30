@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Licensing, billing, security, or anything private
+    url: mailto:support@veryation.com
+    about: For anything you shouldn't post publicly (license keys, credentials, security issues, private logs), email us instead.

@@ -1,0 +1,22 @@
+name: Feature request
+description: Suggest an improvement or a new capability.
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+      description: What are you trying to do that LogLens makes hard or impossible today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you like LogLens to do?
+    validations:
+      required: true
+  - type: input
+    id: editor
+    attributes:
+      label: Which editor(s)?
+      placeholder: JetBrains, VS Code, or both
