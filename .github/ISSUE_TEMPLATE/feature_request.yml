@@ -15,8 +15,25 @@ body:
       label: What would you like LogLens to do?
     validations:
       required: true
+  - type: textarea
+    id: workaround
+    attributes:
+      label: How do you handle this today?
+      description: >
+        Whatever you currently do instead — another tool, a shell command, doing it by hand.
+        This is genuinely the most useful box on this form: it tells us how much pain the
+        gap actually causes, which is how we decide what to build next.
   - type: input
     id: editor
     attributes:
       label: Which editor(s)?
       placeholder: JetBrains, VS Code, or both
+  - type: dropdown
+    id: tier
+    attributes:
+      label: Are you using LogLens Free or Pro?
+      description: Not a gate on your request — it just helps us understand who needs what.
+      options:
+        - Free
+        - Pro
+        - Not sure

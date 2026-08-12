@@ -5,6 +5,26 @@ body:
   - type: markdown
     attributes:
       value: Thanks for the report! Please remove any sensitive data (credentials, PII, private log contents) from anything you paste below.
+  - type: dropdown
+    id: product
+    attributes:
+      label: Which LogLens?
+      options:
+        - JetBrains IDEs (IntelliJ, PyCharm, WebStorm, GoLand, Rider, …)
+        - VS Code / Cursor / Windsurf / VSCodium
+    validations:
+      required: true
+  - type: dropdown
+    id: tier
+    attributes:
+      label: Free or Pro?
+      description: Pro features include cross-file merge, SQL queries, JSON querying, capture columns, the error-density timeline, tail alerts, bookmarks, highlight rules, saved views and redaction.
+      options:
+        - Free
+        - Pro
+        - Not sure
+    validations:
+      required: true
   - type: input
     id: editor
     attributes:
@@ -16,7 +36,8 @@ body:
     id: loglens-version
     attributes:
       label: LogLens version
-      placeholder: e.g. 0.1.0
+      description: Settings → Plugins → LogLens (JetBrains), or the Extensions view (VS Code).
+      placeholder: e.g. 1.0.0
     validations:
       required: true
   - type: input
@@ -39,8 +60,26 @@ body:
         1. Open a .log file of ~X GB
         2. ...
         3. ...
+  - type: input
+    id: file-size
+    attributes:
+      label: Log file size
+      description: Most LogLens bugs depend on scale, so this genuinely helps.
+      placeholder: e.g. 40 MB, 2 GB, still being written to
+  - type: dropdown
+    id: format
+    attributes:
+      label: Log format
+      options:
+        - Plain text
+        - JSON (one object per line)
+        - Mixed
+        - Other / not sure
   - type: textarea
     id: extra
     attributes:
       label: Anything else?
-      description: Screenshots, approximate file size, or a small (redacted) sample of the log format help a lot.
+      description: |
+        Screenshots help a lot. A few **redacted** sample lines showing the format are ideal.
+        If the IDE reported an error, the stack trace from Help → Show Log in Explorer (JetBrains)
+        or Help → Toggle Developer Tools → Console (VS Code) is very useful.
