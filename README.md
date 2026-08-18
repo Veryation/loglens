@@ -24,6 +24,6 @@ Found a security vulnerability? Please **don't open a public issue** — email *
 
 ## Links
 
-[Website](https://apps.veryation.com/loglens) · [License (EULA)](https://apps.veryation.com/loglens/eula) · [Privacy Policy](https://apps.veryation.com/privacy)
+[Website](https://apps.veryation.com/loglens) · [License (EULA)](https://apps.veryation.com/loglens/eula) · [Privacy Policy](https://apps.veryation.com/loglens/privacy)
 
 © 2026 Veryation
